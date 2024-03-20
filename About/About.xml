@@ -8,6 +8,7 @@
 They are unable to preform other tasks such as training and harvest however, but gives your mechanoid run colonies a nice quick fix for joining animals.</description>
   <supportedVersions>
     <li>1.4</li>
+    <li>1.5</li>
   </supportedVersions>
     <modDependencies>
 		<li>
