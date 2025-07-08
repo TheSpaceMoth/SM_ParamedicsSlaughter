@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>	
+	<Operation  Class="PatchOperationConditional">
+		<xpath>/Defs/WorkGiverDef[defName = "Milk"]/canBeDoneByMechs</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/WorkGiverDef[defName = "Milk"]/canBeDoneByMechs</xpath>
+			<value>
+				<canBeDoneByMechs>false</canBeDoneByMechs>		
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/WorkGiverDef[defName = "Milk"]</xpath>
+			<value>
+				<canBeDoneByMechs>false</canBeDoneByMechs>		
+			</value>
+		</nomatch>	
+	</Operation>
+	
+	<Operation  Class="PatchOperationConditional">
+		<xpath>/Defs/WorkGiverDef[defName = "Shear"]/canBeDoneByMechs</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/WorkGiverDef[defName = "Shear"]/canBeDoneByMechs</xpath>
+			<value>
+				<canBeDoneByMechs>false</canBeDoneByMechs>		
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/WorkGiverDef[defName = "Shear"]</xpath>
+			<value>
+				<canBeDoneByMechs>false</canBeDoneByMechs>		
+			</value>
+		</nomatch>	
+	</Operation>
+	
+	<Operation  Class="PatchOperationConditional">
+		<xpath>/Defs/WorkGiverDef[defName = "Tame"]/canBeDoneByMechs</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/WorkGiverDef[defName = "Tame"]/canBeDoneByMechs</xpath>
+			<value>
+				<canBeDoneByMechs>false</canBeDoneByMechs>		
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/WorkGiverDef[defName = "Tame"]</xpath>
+			<value>
+				<canBeDoneByMechs>false</canBeDoneByMechs>		
+			</value>
+		</nomatch>	
+	</Operation>
+	
+	<Operation  Class="PatchOperationConditional">
+		<xpath>/Defs/WorkGiverDef[defName = "Train"]/canBeDoneByMechs</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/WorkGiverDef[defName = "Train"]/canBeDoneByMechs</xpath>
+			<value>
+				<canBeDoneByMechs>false</canBeDoneByMechs>		
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/WorkGiverDef[defName = "Train"]</xpath>
+			<value>
+				<canBeDoneByMechs>false</canBeDoneByMechs>		
+			</value>
+		</nomatch>	
+	</Operation>
+</Patch>
